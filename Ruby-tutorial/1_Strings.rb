@@ -13,10 +13,10 @@
 
 # Small exercise
 puts "qual seu nome?"
-name = gets.chomp()
+name = $stdin.gets.chomp()
 puts "seu sobrenome?"
-last_name = gets.chomp()
+last_name = $stdin.gets.chomp()
 puts "seu nome é #{name} #{last_name}"
 full_name = name + " " + last_name
 puts "seu nome invertido eh #{full_name.reverse()}"
-puts "seu nome tem #{name.length() + last_name.length()} letras"
+puts "seu nome tem #{full_name.sub(" ", "").length()} letras"
